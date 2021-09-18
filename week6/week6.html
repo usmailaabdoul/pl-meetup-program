@@ -15,18 +15,18 @@
 </body>
 
 <script src="./week6.js">
-  // const getData = () => {
-  //   fetch('http://127.0.0.1:3000/api/v1/books', {
-  //     method: 'GET',
-  //   })
-  //     .then(response => response.json())
-  //     .then(res => {
-  //       const info = res.map((d) => `<h3>${d.name}</h3> <br> <p>${d.author}</p>`)
-  //       document.getElementById('home').innerHTML = info
-  //     });
-  // }
+  const getData = () => {
+    fetch('http://127.0.0.1:3000/api/v1/books', {
+      method: 'GET',
+    })
+      .then(response => response.json())
+      .then(res => {
+        const info = res.map((d) => `<h3>${d.name}</h3> <br> <p>${d.author}</p>`)
+        document.getElementById('home').innerHTML = info
+      });
+  }
 
-  // getData()
+  getData()
 </script>
 
 <script>
